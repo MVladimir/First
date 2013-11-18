@@ -34,8 +34,8 @@ end
 Class Jeep<Avto
  attr_reader :wd, :klirens
  def initialize(options)
-   :wd      = options[:wd]
-   :klirens = options [:klirens]
+   @wd      = options[:wd]
+   @klirens = options [:klirens]
    super
  end
 end
@@ -43,8 +43,8 @@ end
 Class Sidan<Avto 
  attr_reader :class :complectation
  def initialize (options)
-  :class = options [:class]
-  :complectation = options [:complectation]
+  @class = options [:class]
+  @complectation = options [:complectation]
   super
  end
 end
@@ -52,8 +52,8 @@ end
 Class MonstarTrac<Avto
  attr_reader :engine :weight
  def initialize (options)
-  :engine = options [:engine]
-  :weight = options [:weight]
+  @engine = options [:engine]
+  @weight = options [:weight]
   super
  end
 end
