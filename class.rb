@@ -11,13 +11,13 @@ class Avto
 
 
  def GPS
-   a = rand(4000)
-   b = rand(10000)
-   puts ("N-S=" a, "E-W=" b)  
+   a = rand(150)-75
+   b = rand(180)-90
+   puts (a,b)  
  end
 
 
- def Go/stop(c)
+ def sosto9nie(c)
   if c = go then 
              puts ("go")
             else 
@@ -36,6 +36,7 @@ Class Jeep<Avto
  def initialize(options)
    :wd      = options[:wd]
    :klirens = options [:klirens]
+   super
  end
 end
 
@@ -44,14 +45,16 @@ Class Sidan<Avto
  def initialize (options)
   :class = options [:class]
   :complectation = options [:complectation]
+  super
  end
 end
 
-Class MonstarTrac<Acto
+Class MonstarTrac<Avto
  attr_reader :engine :weight
  def initialize (options)
   :engine = options [:engine]
   :weight = options [:weight]
+  super
  end
 end
 
