@@ -13,18 +13,18 @@ class Avto
  def GPS
    a = rand(150)-75
    b = rand(180)-90
-   puts (a,b)  
+   puts "#{a} #{b}"  
  end
 
 
  def sosto9nie(c)
-  if c = go then 
+  if c = :go then 
              puts ("go")
             else 
-             if c = stop then
+             if c = :stop then
                           puts ("stop")
                          else 
-                          puts 
+                          puts ("error")
              end
   end
 
@@ -89,4 +89,4 @@ avto3 = MonstarTrac.new({
         :price        => 1500000
         :engine       => "7 litrov"
         :weight       => "7000 kg"
-        }) 
+        })
