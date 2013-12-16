@@ -18,10 +18,10 @@ class Avto
 
 
  def sosto9nie(c)
-  if c = :go then 
+  if c == 'go' then 
              puts ("go")
             else 
-             if c = :stop then
+             if c == 'stop' then
                           puts ("stop")
                          else 
                           puts ("error")
